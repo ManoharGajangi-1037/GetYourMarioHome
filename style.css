@@ -1,0 +1,77 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+  background-color: black;
+  color:white;
+  width: 500px;
+  text-align: center;
+  border-radius: 5px;
+}
+.maze-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 0.5px;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(226, 187, 31);
+  }
+  
+  .cell {
+    background-color: white;
+    border: 1px solid black;
+  }
+  
+  .obstacle {
+    background-image: url("obstacle.png");
+  background-size: cover;
+  background-position: center;
+  }
+  .start{
+  background-image: url("mario.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+  
+  .end {
+    background-image: url("home.jpeg");
+  background-size: cover;
+  background-position: center;
+
+  }
+  
+  .path {
+    background-image: url("green.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .start-btn{
+    border-radius: 5px;
+    width:100px;
+    height:30px;
+  }
+  .clear-btn{
+    border-radius: 5px;
+    width:100px;
+    height:30px;
+  }
+  .start-btn:hover{
+    background-color:black;
+    color:whitesmoke;
+    font-size: medium;
+    font-weight: 200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .clear-btn:hover{
+    background-color:black;
+    color:whitesmoke;
+    font-size: medium;
+    font-weight: 200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
